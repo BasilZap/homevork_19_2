@@ -48,7 +48,8 @@
                 </div>
                 <div class="col-12">
                      <div class="card mb-4 rounded-3 shadow-sm">
-                             <form>
+                             <form method="post">
+                                 {% csrf_token %}
                               <div class="mb-3">
                                 <label for="InputName1" class="form-label">Name</label>
                                 <input name="name" type="text" class="form-control" id="InputName1" aria-describedby="emailHelp">
